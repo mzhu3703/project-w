@@ -7,23 +7,13 @@ import {
 } from "react-router-dom";
 import Home from './Home';
 import About from './About';
-
+import Navbar from './Navbar';
 
 export default function Nav() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
+        <Navbar />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
