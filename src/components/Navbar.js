@@ -6,16 +6,16 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 import { Link } from "react-router-dom";
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
+  button: {
+    color: 'white',
+
   },
 }));
 
@@ -26,21 +26,23 @@ export default function Navbar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-
-          <Link to="/">
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <HomeIcon />
-            </IconButton>
-          </Link>
-
-          <Link to="/about">
-            <Button color="white">About</Button>
-          </Link>
-
-          <Link to="/">
-            <Button color="inherit">Project W</Button>
-          </Link>
-
+          <Box flexGrow={1} >
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <Button className={classes.button} color="pink">Project W</Button>
+            </Link>
+          </Box>
+          <Box>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <IconButton edge="start" className={classes.button} color="black" aria-label="menu">
+                <HomeIcon />
+              </IconButton>
+            </Link>
+          </Box>
+          <Box>
+            <Link to="/about" style={{ textDecoration: 'none' }}>
+              <Button className={classes.button} color="white"  >About</Button>
+            </Link>
+          </Box>
         </Toolbar>
       </AppBar>
     </div>
