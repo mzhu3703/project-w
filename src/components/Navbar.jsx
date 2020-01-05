@@ -5,10 +5,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import Box from '@material-ui/core/Box';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     flexGrow: 1,
@@ -26,7 +26,7 @@ export default function Navbar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Box flexGrow={1} >
+          <Box flexGrow={1}>
             <Link to="/" style={{ textDecoration: 'none' }}>
               <Button className={classes.button} color="pink">Project W</Button>
             </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
           </Box>
           <Box>
             <Link to="/about" style={{ textDecoration: 'none' }}>
-              <Button className={classes.button} color="white"  >About</Button>
+              <Button className={classes.button} color="white">About</Button>
             </Link>
           </Box>
         </Toolbar>
