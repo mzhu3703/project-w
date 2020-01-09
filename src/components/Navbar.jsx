@@ -27,7 +27,7 @@ export default function Navbar() {
         <Toolbar>
           <Box flexGrow={1}>
             <Link to="/" style={{ textDecoration: 'none' }}>
-              <Button className={classes.button}>Project W</Button>
+               <Button className={classes.button}>Project W</Button>
             </Link>
           </Box>
           <Box>
