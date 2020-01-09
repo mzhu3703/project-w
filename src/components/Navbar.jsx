@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     color: 'white',
-
   },
 }));
 
@@ -28,19 +27,19 @@ export default function Navbar() {
         <Toolbar>
           <Box flexGrow={1}>
             <Link to="/" style={{ textDecoration: 'none' }}>
-              <Button className={classes.button} color="pink">Project W</Button>
+              <Button className={classes.button}>Project W</Button>
             </Link>
           </Box>
           <Box>
             <Link to="/" style={{ textDecoration: 'none' }}>
-              <IconButton edge="start" className={classes.button} color="black" aria-label="menu">
+              <IconButton edge="start" className={classes.button} aria-label="menu">
                 <HomeIcon />
               </IconButton>
             </Link>
           </Box>
           <Box>
             <Link to="/about" style={{ textDecoration: 'none' }}>
-              <Button className={classes.button} color="white">About</Button>
+              <Button className={classes.button}>About</Button>
             </Link>
           </Box>
         </Toolbar>

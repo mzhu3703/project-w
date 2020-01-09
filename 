@@ -1,0 +1,55 @@
+[33mcommit f8550591ce12a249eb54bfabc837e84c71aa95e1[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/aboutpage[m[33m)[m
+Merge: 48606e9 07f853f
+Author: Michael <mzhu3703@gmail.com>
+Date:   Fri Jan 3 20:32:46 2020 -0500
+
+    Merge branch 'develop' into feature/aboutpage
+    merge develop into feature branch
+
+[33mcommit 07f853fe51bf78425f1147fcde8352a65bc9d03a[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: a43fc43 f6ad296
+Author: mzhu3703 <52179034+mzhu3703@users.noreply.github.com>
+Date:   Fri Jan 3 20:31:52 2020 -0500
+
+    Merge pull request #2 from mzhu3703/feature/PJW-100
+    
+    home about left alligned, text set to white
+
+[33mcommit 48606e957678d8483840aa01c68642642d54b3aa[m
+Author: Michael <mzhu3703@gmail.com>
+Date:   Fri Jan 3 20:29:23 2020 -0500
+
+    about
+
+[33mcommit a43fc4398233771f786dd721624a70b711207110[m
+Merge: 071fc78 0903d02
+Author: mzhu3703 <52179034+mzhu3703@users.noreply.github.com>
+Date:   Fri Jan 3 20:00:30 2020 -0500
+
+    Merge pull request #1 from mzhu3703/feature/PJW-100
+    
+    Implement navbar component
+
+[33mcommit f6ad296b1e4dbb748ee6777380353c1e26eab7b7[m[33m ([m[1;31morigin/feature/PJW-100[m[33m, [m[1;32mfeature/PJW-100[m[33m)[m
+Author: Michael <mzhu3703@gmail.com>
+Date:   Fri Jan 3 19:59:52 2020 -0500
+
+    home about left alligned, text set to white
+
+[33mcommit 0903d020b2abe03241390bb4f7689c13f94c5d13[m
+Author: Jim Mo <jimdev2277@gmail.com>
+Date:   Thu Jan 2 20:43:29 2020 -0500
+
+    removed unused files, added navbar component
+
+[33mcommit 071fc785472ad212fb807a3af1a148796852236d[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Michael <mzhu3703@gmail.com>
+Date:   Wed Jan 1 19:57:16 2020 -0500
+
+    home and about page
+
+[33mcommit 3d237fd0d148db4179ba6720952966754eeb78fa[m
+Author: Michael <mzhu3703@gmail.com>
+Date:   Wed Jan 1 17:00:20 2020 -0500
+
+    Initial commit from Create React App
