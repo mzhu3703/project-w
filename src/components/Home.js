@@ -2,37 +2,47 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
+import {
+  Link,
+} from "react-router-dom";
 
+//Array of objects
 const images = [
   {
-    url: 'https://i.pinimg.com/474x/dc/21/5a/dc215a9d151df4101d869fe44d30ff87--building-plans-chest-routine.jpg',
+    url: 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-1.gif',
     title: 'Chest',
     width: '30%',
+    path: "/about",
   },
   {
-    url: 'https://www.bodybuilding.com/fun/images/2014/all-about-shoulder-pain_05-700xh.jpg',
+    url: 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-12.gif',
     title: 'Shoulders',
     width: '30%',
+    path: "/about",
   },
   {
-    url: '/static/images/grid-list/camera.jpg',
+    url: 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-15.gif',
     title: 'Arms',
     width: '30%',
+    path: "/about",
   },
   {
-    url: '/static/images/grid-list/camera.jpg',
+    url: 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-7.gif',
     title: 'Legs',
     width: '30%',
+    path: "/about",
   },
   {
-    url: '/static/images/grid-list/camera.jpg',
+    url: 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-13.gif',
     title: 'Abs',
     width: '30%',
+    path: "/about",
   },
   {
-    url: '/static/images/grid-list/camera.jpg',
+    url: 'https://artifacts.bbcomcdn.com/@bbcom/exercises-app/2.0.0/img/guide-3.gif',
     title: 'Back',
     width: '30%',
+    path: "/about",
   },
 ];
 
@@ -84,22 +94,22 @@ const useStyles = makeStyles(theme => ({
   //positioning of image
   imageSrc: {
     position: 'absolute',
-    left: 0,
-    right: 0,
+    left: 80,
+    right: 80,
     top: 0,
-    bottom: 0,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center 40%',
+    bottom: 10,
+    //backgroundSize: 'cover',
+    backgroundPosition: 'center 20%',
   },
   //boxes that contain image and button 
   imageBackdrop: {
     position: 'absolute',
-    left: 0,
-    right: 0,
+    left: 60,
+    right: 60,
     top: 0,
-    bottom: 0,
+    bottom: 5,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.3,
+    opacity: 0.15,
     transition: theme.transitions.create('opacity'),
   },
   //positioning of button title
@@ -124,9 +134,9 @@ export default function Home() {
     <div>
       <div className={classes.root}>
         {images.map(image => (
+          <Link to = {image.path} key = {image.title}>
           <ButtonBase
             focusRipple
-            key={image.title}
             className={classes.image}
             focusVisibleClassName={classes.focusVisible}
             style={{
@@ -152,7 +162,7 @@ export default function Home() {
               </Typography>
             </span>
           </ButtonBase>
-
+          </Link>
         ))}
       </div>
 
